@@ -1,4 +1,7 @@
 object T4Q1 extends App{
+  println("Enter the deposit amount: ")
+  val dep = scala.io.StdIn.readInt()
+
   var depInterest:Double = 0
   def calcInterest(dep:Double):Double={
     if(dep <= 20000){
@@ -16,5 +19,5 @@ object T4Q1 extends App{
     }
 
   }
-  println("The interest for the deposit amount is: "+calcInterest(5000))
+println("The interest for the deposit is:" + calcInterest(dep:Double))
 }
